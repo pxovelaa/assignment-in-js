@@ -9,7 +9,7 @@
 
 // 1 კომენტარები
 
-/
+/*
   // კომენტარები გაფუჭდა თქვენი დავალებაა
   // არასწორად დაწერილი კომენტარი ჩაასწოროთ
   // და ასევე გამოიყენოთ თქვენი კოდის აღსაწერად
@@ -30,13 +30,16 @@
 */
 
 // >>>> კოდი დაწერეთ აქ
-
+const name = 'Michael';
+const surname = 'Jackson';
+const birthYear = 1958;
+const birthPlace = 'USA';
 
 
 
 // 
 
-/
+/*
   // დროა დავიწყოთ მზადება ჩვენს მომავალ პროექტზე.
   // ჩვენი დავალეებაა მოვიფიქროთ რაიმე პროდუქტთა სია
   // რომელსაც გამოვიყენებთ მომავალში.
@@ -50,8 +53,11 @@
 */
 
 
-/ / >>>> კოდი დაწერეთ აქ
-
+// >>>> კოდი დაწერეთ აქ
+const bookName = "გურჯი-ხათუნი";
+const authrName = "დათო ტურაშვილი";
+const createDate = "21 საუკუნე";
+let productQuant = 90;
 
 //
 
@@ -66,10 +72,10 @@
 
 
 
-const age = "1";
-const hisName = ["bob"];
-const isHigh = "true";
-const dateOfBirth = "1995";
+const age = 1; // removed --> ""
+const hisName = "bob"; // removed --> []
+const isHigh = true; // removed --> ""
+const dateOfBirth = 1995; // removed --> ""
 
 
 
@@ -85,7 +91,11 @@ console.log(typeof dateOfBirth === "number")
 
 
 
-/ აქ უნდა გაიგოთ თქვენი პროდუქტის სიის ტიპი
+// აქ უნდა გაიგოთ თქვენი პროდუქტის სიის ტიპი
+console.log(typeof bookName);
+console.log(typeof authrName);
+console.log(typeof createDate);
+console.log(typeof productQuant);
 
 // მაგ: console.log(typeof age)
 
@@ -98,11 +108,21 @@ let num = 5;
 // გამოიყენეთ ყველა ვარიანტი რომლითაც შეგვიძლია ამ ციფრის გაზრდა
 
 // >>> კოდი დაწერეთ აქ
+let c = num ** 2;
 
+let a = num + 5;
+
+let b = num * 5;
+
+
+
+c = +c;
 
 //
 
-console.log(num)
+console.log(a, '+=');
+console.log(b, '*=');
+console.log(c, '**');
 
 
 
@@ -110,6 +130,19 @@ console.log(num)
 // მნიშვნელობები და გაიგოთ შეკრებილი მონაცემების ტიპი
 
 // >>> კოდი დაწერეთ აქ
+let aplleQuant = 10;
+let grapeQuant = '30';
+let pearQuant = 20;
 
+let sum;
+
+sum = aplleQuant + pearQuant + grapeQuant;
+
+let sum1 ;
+
+sum1 = aplleQuant  + grapeQuant + pearQuant;
+
+console.log(sum);
+console.log(sum1);
 
 //
