@@ -23,8 +23,8 @@ const text2 = "0";
 
 // >>> კოდი დაწერეთ აქ 
 
-const isFalse = [];
-const isTrue = [];
+const isFalse = [num1, boolean1, emptyString, boolean2,];
+const isTrue = [num2, text, text2];
 
 //
 
@@ -32,8 +32,11 @@ const isTrue = [];
 // შეცვალეთ ერთი ასო რომ მიიღოთ ჭეშმარიტი დებულება
 // მოკლედ ახსენით მუშაობის პრინციპი თუ რატომ იმოქმედა
 
-console.log("abc" > "ah")
-console.log(2 === "004")
+console.log("ibc" > "ah") ;
+/* amowmebs numeraciit binary positionis mixedvit tu pirveli ori aso tolia amowmebs shemdeg asos magalitad abc da abg 
+radgann a=a , b = b, da c < g  ---->> aqedan gamomdinare abg > abc mgoni sworad avxseni :DDD */
+console.log(2 == "002") ;
+
 
 
 
@@ -43,7 +46,13 @@ console.log(2 === "004")
 // 18 წელზე შესთავაზეთ სასმელი
 
 // >>> კოდი დაწერეთ აქ 
+let age = 18;
 
+if ( age >= 18){
+  console.log('რომელი სასმელი გნებავთ?');
+}else {
+  console.log('თქვენ ჯერ არასრულწლოვანი ხართ ...');
+}
 
 //
 
@@ -51,6 +60,20 @@ console.log(2 === "004")
 // მოიფიქრეთ 2 if else-ის მაგალითი თქვენით
 
 // >>> კოდი დაწერეთ აქ
+let carAge = 2015;
+let CO2 = 0.6;
+function greenWay(){
+  if (CO2 <= 0.6){
+    if (carAge >= 2014){
+      console.log('თქვენ გაიარეთ 2 წლიანი ტექ-ინპექტირება !!');
+    }else {
+      console.log('თქვენ გაიარეთ 1 წლიანი ტექ-ინპექტირება !!');
+    }
+  } else {
+    console.log('თქვენ ვერ გაიარეთ ტექ-ინსპექტირება!');
+  }
+}
+
 
 //
 
@@ -58,7 +81,7 @@ console.log(2 === "004")
 // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
 
 // >>> კოდი დაწერეთ აქ
-
+(CO2 <= 0.6) ? console.log('თქვენ გაიარეთ ტექ-ინსპექტირება!') : console.log('თქვენ ვერ გაიარეთ ტექ-ინსპექტირება!');
 //
 
 
@@ -79,7 +102,19 @@ let colorId = 3
 
 
 // >>> კოდი დაწერეთ აქ
-
+if(colorId == 0){
+  console.log('შავი');
+}else if (colorId == 1){
+  console.log('ლურჯი');
+}else if ( colorId == 2 ){
+  console.log('მწვანე');
+}else if( colorId == 3){
+  console.log('წითელი');
+}else if (colorId == 4){
+  console.log('თეთრი');
+} else {
+  console.log('colorId = undefined');
+}
 
 //
 
@@ -88,7 +123,11 @@ let colorId = 3
 // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
 
 // >>> კოდი დაწერეთ აქ
-
+colorId == 0 ? console.log('შავი') : console.log('colorId = undefined');
+colorId == 1 ? console.log('ლურჯი') : console.log('colorId = undefined');
+colorId == 2 ? console.log('მწვანე') : console.log('colorId = undefined');
+colorId == 3 ? console.log('წითელი') : console.log('colorId = undefined');
+colorId == 4 ? console.log('თეთრი') : console.log('colorId = undefined');
 
 //
 
@@ -97,7 +136,25 @@ let colorId = 3
 
 // ცადეთ იგივე გააკეთოთ რაც წინა დავალებაში
 // ოღონდ ამჯერად Switch-ის დახმარებით
-
+switch (colorId){
+  case 0 : 
+    console.log('შავი');
+    break;
+  case 1 :
+    console.log('ლურჯი');
+    break;
+  case 2 :
+    console.log('მწვანე');
+    break;
+  case 3 :
+    console.log('წითელი');
+    break;
+  case 4 :
+    console.log('თეთრი');
+    break;
+  default:
+    console.log('colorId = undefined');
+}
 
 // >>> კოდი დაწერეთ აქ
 
@@ -131,17 +188,44 @@ let colorId = 3
         break;
     """"
 */
-const bot = document.getElementById("bot")
-bot.addEventListener("click", myFun())
+const bot = document.getElementById("bot");
+bot.addEventListener("click", myFun);
 
 function myFun() {
-  let x = prompt("მე მზად არ ვარ პასუხისათვის")
+  let x = 0;
+  x = prompt("მე მზად არ ვარ პასუხისათვის")
 
   // >>> კოდი დაწერეთ აქ გამოიყენეთ Switch
+  switch (x){
+    case 'გამარჯობა':
+      alert('გამარჯობა, რით შემიძლია დაგეხმაროთ');
+      break;
+    case 'რომელ საათამდე მუშაობთ?':
+      alert('6 საათამდე');
+      break;
+    case 'რომელ დღეებში მუშაობთ?':
+      alert('ორშაბათიდან პარასკევამდე');
+      break;
+    case 'ვაკანსიები გაქვთ?':
+      alert('front-end სტაჟირების ვაკანსია გვაქვს მხოლოდ');
+      break;
+    case 'ტერიტორიულად სად ხართ?':
+      alert('ვარკეთილში.');
+      break;
+    case '':
+      alert('????');
+      break;
+    case null :
+      alert ('კითქვები თუ არ გაქვთ დაგემშვიდობებით');
+      return false;
+  }
+
 
 
   //
 
   // რეკურსიული ფუნქცია
   myFun()
+
+
 }
